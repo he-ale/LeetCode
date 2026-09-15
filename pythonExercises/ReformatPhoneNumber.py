@@ -11,6 +11,6 @@ class Solution:
         if (aux == ""):
             return phoneNumber[:-1]
         elif (len(aux) == 1):
-            return phoneNumber[:-1] + "-" + phoneNumber[-1] + aux
+            return phoneNumber[:-2] + "-" + phoneNumber[-2] + aux
         else:
-            return phoneNumber + "-" + aux
+            return phoneNumber + aux
